@@ -78,7 +78,8 @@ void enlarge(HashMap * map) {
 
 }
 
-/*
+/* Ojala lean las explicaciones... aunque no tendria sentido si quien revisa esto seguramente se lo sepa de memoria...
+
 Explciacion de la operacion (ejercicio 1):
 
 Se declara una variable de tipo HashMap llamada map.
