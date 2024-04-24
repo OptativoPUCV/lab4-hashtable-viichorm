@@ -31,3 +31,9 @@ hashmap.c:55:3: error: unknown type name ‘logn’; did you mean ‘long’?
       |   long
 Compilation failed
 da495d5
+Wed 24 Apr 2024 06:44:13 PM UTC: 
+ hashmap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  1|5
+total_score: 10/70
+0a8e907
