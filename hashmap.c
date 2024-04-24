@@ -121,8 +121,21 @@ Decrementa el tamaño del mapa.
 */
 
 void eraseMap(HashMap * map,  char * key) {    
-  
+  // long position = hash(char *key, long capacity); //(15:01) tambien sirve asi?... :O
+  // ok, nvm no se puede xd
 
+  long position = hash(key, map->capacity);
+
+  while (map->buckets[position] != NULL) {
+    if (strcmp(map->buckets[position]->key, key) == 0){
+
+      map->buckets[position]->key = NULL;
+      map->current = position;
+      map -> size--;
+      return;
+    }
+    position = (position + 1) % map->capacity;
+  }
 }
 
 /* 
