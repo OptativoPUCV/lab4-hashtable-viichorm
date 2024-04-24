@@ -143,7 +143,7 @@ Pair * searchMap(HashMap * map,  char * key) {
   }
 
 
-    return NULL;
+    return NULL; //un return null mas... -.-
 }
 
 Pair * firstMap(HashMap * map) {
