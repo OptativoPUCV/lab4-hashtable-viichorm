@@ -51,7 +51,7 @@ Actualiza el índice current y el tamaño del mapa según corresponda.
 
 
 void insertMap(HashMap * map, char * key, void * value) {
-    if(map==NULL || key==NULL) return;
+  
   long position = hash(key, map->capacity);
   while(map->buckets[position]!=NULL && map->buckets[position]->key!=NULL){
 
