@@ -109,14 +109,25 @@ HashMap * createMap(long capacity) {
     return map;
 }
 
-void eraseMap(HashMap * map,  char * key) {    
+/*
+Explicacion operacion (ejercicio 4):
 
+Calcula la posición utilizando la función hash.
+Itera hasta encontrar la clave o una casilla nula.
+Si encuentra la clave, invalida el par asignando NULL a la clave.
+Actualiza el índice current si se encontró la clave.
+Decrementa el tamaño del mapa.
+
+*/
+
+void eraseMap(HashMap * map,  char * key) {    
+  
 
 }
 
 /* 
 
-Explicacion de funcion (ejercicio 3):
+Explicacion de operacion (ejercicio 3):
 
 Calcula la posición utilizando la función hash.
 Itera hasta encontrar la clave o una casilla nula.
