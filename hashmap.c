@@ -38,6 +38,17 @@ int is_equal(void* key1, void* key2){
     return 0;
 }
 
+/*
+
+Calcula la posición utilizando la función hash.
+Itera hasta encontrar una casilla disponible.
+Verifica si la clave ya existe en el mapa, en cuyo caso no inserta.
+Inserta el nuevo par en la casilla encontrada.
+Actualiza el índice current y el tamaño del mapa según corresponda.
+
+*/
+
+
 
 void insertMap(HashMap * map, char * key, void * value) {
 
@@ -74,7 +85,6 @@ HashMap * createMap(long capacity) {
   map->size = 0;
   map->capacity = capacity;
   map->current = -1;
-
   
     return map;
 }
