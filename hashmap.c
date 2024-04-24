@@ -39,6 +39,7 @@ int is_equal(void* key1, void* key2){
 }
 
 /*
+Explicacion de la operacion (ejercicio 2):
 
 Calcula la posición utilizando la función hash.
 Itera hasta encontrar una casilla disponible.
@@ -77,6 +78,8 @@ void enlarge(HashMap * map) {
 }
 
 /*
+Explciacion de la operacion (ejercicio 1):
+
 Se declara una variable de tipo HashMap llamada map.
 Se asigna memoria dinámica para la estructura HashMap.
 Se inicializa el arreglo de buckets con casillas nulas.
