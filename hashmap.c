@@ -62,12 +62,21 @@ HashMap * createMap(long capacity) {
 
     HashMap * map = (HashMap *)malloc(sizeof(HashMap));
   if (map == NULL) {
-
     exit(EXIT_FAILURE);
   }
 
+  map->buckets = (Pair **)calloc(capacity, sizeof(Pair *));
+  if (map->buckets == NULL){
+    exit(EXIT_FAILURE);
+  }
+
+
+  map->size = 0;
+  map->capacity = capacity;
+  map->current = -1;
+
   
-    return NULL;
+    return map;
 }
 
 void eraseMap(HashMap * map,  char * key) {    
