@@ -20,3 +20,14 @@ Wed 24 Apr 2024 06:41:04 PM UTC:
  tests:  1|5
 total_score: 10/70
 922278b
+Wed 24 Apr 2024 06:44:04 PM UTC: 
+ hashmap.c | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+In file included from test.c:4:
+hashmap.c: In function ‘insertMap’:
+hashmap.c:55:3: error: unknown type name ‘logn’; did you mean ‘long’?
+   55 |   logn position = hash(key, map->capacity);
+      |   ^~~~
+      |   long
+Compilation failed
+da495d5
