@@ -138,6 +138,8 @@ Pair * searchMap(HashMap * map,  char * key) {
     }
 
       position = (position + 1) % map->capacity;
+
+    // se me brickeaba el replit si me faltaba esta linea xD!, con razon nunca me daba en console jadjajgaskdf
   }
 
 
