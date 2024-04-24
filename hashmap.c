@@ -127,8 +127,18 @@ Actualiza el índice current si se encontró la clave.
 
 
 Pair * searchMap(HashMap * map,  char * key) {   
+    if(map==NULL || key==NULL) return NULL;
 
-  
+  long position = hash(key, map->capacity);
+  while(map->buckets[position] != NULL){
+
+    if (strcmp(map->buckets[position]->key, key) == 0){
+      map->current = position;
+      return map->buckets[position];
+    }
+
+      position = (position + 1) % map->capacity;
+  }
 
 
     return NULL;
