@@ -52,6 +52,7 @@ Actualiza el índice current y el tamaño del mapa según corresponda.
 
 
 void insertMap(HashMap * map, char * key, void * value) {
+    if(map==NULL || key==NULL || value==NULL) return;
   
   long position = hash(key, map->capacity);
   while(map->buckets[position] !=   NULL && map->buckets[position]->key != NULL){
@@ -112,7 +113,22 @@ void eraseMap(HashMap * map,  char * key) {
 
 }
 
+/* 
+
+Explicacion de funcion (ejercicio 3):
+
+Calcula la posición utilizando la función hash.
+Itera hasta encontrar la clave o una casilla nula.
+Si encuentra la clave, retorna el par asociado.
+Si llega a una casilla nula, retorna NULL.
+Actualiza el índice current si se encontró la clave.
+
+*/
+
+
 Pair * searchMap(HashMap * map,  char * key) {   
+
+  
 
 
     return NULL;
