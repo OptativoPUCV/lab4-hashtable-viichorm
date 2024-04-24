@@ -50,9 +50,23 @@ void enlarge(HashMap * map) {
 
 }
 
+/*
+Se declara una variable de tipo HashMap llamada map.
+Se asigna memoria dinámica para la estructura HashMap.
+Se inicializa el arreglo de buckets con casillas nulas.
+Se inicializan las variables size, capacity y current.
+Se retorna el mapa creado.
+*/
 
 HashMap * createMap(long capacity) {
 
+    HashMap * map = (HashMap *)malloc(sizeof(HashMap));
+  if (map == NULL) {
+
+    exit(EXIT_FAILURE);
+  }
+
+  
     return NULL;
 }
 
