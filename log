@@ -97,3 +97,15 @@ Wed 24 Apr 2024 07:07:36 PM UTC:
  tests:  11|2
 total_score: 50/70
 007b0ad
+Sun 28 Apr 2024 02:23:50 AM UTC: 
+ hashmap.c | 17 +++++++++++++++++
+ 1 file changed, 17 insertions(+)
+In file included from test.c:4:
+hashmap.c:193:5: error: expected identifier or ‘(’ before ‘return’
+  193 |     return NULL;
+      |     ^~~~~~
+hashmap.c:194:1: error: expected identifier or ‘(’ before ‘}’ token
+  194 | }
+      | ^
+Compilation failed
+c9d3bf0
