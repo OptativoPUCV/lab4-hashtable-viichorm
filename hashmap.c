@@ -171,35 +171,13 @@ Pair * searchMap(HashMap * map,  char * key) {
     return NULL; //un return null mas... -.-
 }
 
-// Verifica si el mapa está correctamente inicializado y no está vacío.
-// Itera sobre los buckets del mapa hasta encontrar el primer bucket no vacío.
-// Actualiza el índice current del mapa al índice del bucket encontrado.
-// Devuelve el primer par encontrado en el bucket.
+
 
 Pair * firstMap(HashMap * map) {
-  if (map == NULL || map->buckets == NULL || map->size == 0) {
-      return NULL;
-  }
-
-  for (int i = 0; i < map->capacity; i++) {
-      if (map->buckets[i] != NULL){
-        return NULL;
-        
-      }
-
-    for (int i = 0; i < map->capacity; i++){
-      if (map->buckets[i] != NULL){
-        map->current = i;
-        return map->buckets[i];
-      }
-      
-    }
-    
   return NULL;
 }
 
 
 Pair * nextMap(HashMap * map) {
-
     return NULL;
 }
