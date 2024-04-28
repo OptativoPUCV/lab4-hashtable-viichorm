@@ -75,6 +75,12 @@ void insertMap(HashMap * map, char * key, void * value) {
 
 // Explciacion de la operacion (ejercicio 6):
 
+// a - Crear una variable auxiliar para mantener el arreglo map->buckets (old_buckets)
+// b - Duplicar el valor de la variable capacity
+// c - Asignar a map->buckets un nuevo arreglo con la nueva capacidad
+// d - Reinicializar size a 0
+// e - Insertar los elementos del arreglo old_buckets en el mapa
+// Liberar la memoria del arreglo antiguo
 
 void enlarge(HashMap * map) {
     enlarge_called = 1; //no borrar (testing purposes)
