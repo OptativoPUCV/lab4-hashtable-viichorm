@@ -81,7 +81,7 @@ void insertMap(HashMap * map, char * key, void * value) {
 // d - Reinicializar size a 0
 // e - Insertar los elementos del arreglo old_buckets en el mapa
 // Liberar la memoria del arreglo antiguo
-
+// porfin >,< .....
 void enlarge(HashMap * map) {
     enlarge_called = 1; //no borrar (testing purposes)
   
