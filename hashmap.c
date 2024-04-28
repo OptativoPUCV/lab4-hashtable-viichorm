@@ -72,6 +72,10 @@ void insertMap(HashMap * map, char * key, void * value) {
 
 }
 
+
+// Explciacion de la operacion (ejercicio 6):
+
+
 void enlarge(HashMap * map) {
     enlarge_called = 1; //no borrar (testing purposes)
 
